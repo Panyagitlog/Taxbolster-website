@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+// import Card from '../components/Card.astro';
+// import Navbar from '../components/Navbar.astro';
+import { imageConfig } from 'astro:assets';
+import Intro from '../components/Intro.astro';
+import Navbar1 from '../components/Navbar1.astro';
+import Review from '../components/Review.astro';
+import Footer from '../components/Footer.astro';
+import Itr from '../components/Itr.astro';
+import Gst from '../components/Gst.astro';
+import Course from '../components/Course.astro';
+import Qa from '../components/Qa.astro';
+import Otherservices from '../components/Otherservices.astro';
+import About from '../components/About.astro';
+import Bentoui from '../components/Bentoui.astro';
+import Contact from '../components/Contact.astro';
+
+
+
+---
+
+<>
+<Layout title="Welcome to Taxbolster.">
+	<section id="home"><Navbar1/></section>
+	<Bentoui/>
+	<section id="intro"><Intro/></section>
+	<section id="review"><Review/></section>
+	<section id="qa"><Qa/></section>
+	<section id="itr"><Itr/></section>
+	<section id="gst"><Gst/></section>
+	<section id="course"><Course/></section>
+	<section id="otherservices"><Otherservices/></section>
+	<section id="about"><About/></section>
+	<section id="contact"><Contact/></section>
+	<Footer/>  
+</Layout>
+
+</>
+
+<style>
+	.heading {
+		background-color: blue;
+		color: white;
+	}
+</style>
